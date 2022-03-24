@@ -32,6 +32,7 @@ const App = () => {
   };
 
   const searchedStories = stories.filter(function (story) {
+    //I believe this is one way to remove the case sensitivity -- by setting comparing both when set to lowercase
     return story.title.toLowerCase().includes(searchTerm.toLowerCase());
   });
 
